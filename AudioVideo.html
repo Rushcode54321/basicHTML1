@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    Theory For Audio and Video Tags:
+    1.HTML Video:
+        The HTML <video> element is used to show a video on a web page.
+        To show a video in HTML, use the <video> element
+        It is a good idea to always include width and height attributes. 
+        If height and width are not set, the page might 
+        flicker while the video loads.
+        The <source> element allows you to specify alternative video 
+        files which the browser may choose from. 
+        The browser will use the first recognized format.
+        The text between the <video> and </video> tags will only be 
+        displayed in browsers that do not support the <video> element.
+        The controls attribute adds video controls, like play, 
+        pause, and volume.
+    2.HTML Audio:
+        The HTML <audio> element is used to play an audio 
+        file on a web page.
+        To play an audio file in HTML, use the <audio> element
+        The controls attribute adds audio controls, 
+        like play, pause, and volume.
+        The <source> element allows you to specify alternative 
+        audio files which the browser may choose from. 
+        The browser will use the first recognized format.
+        The text between the <audio> and </audio> tags will only be
+        displayed in browsers that do not support the 
+        <audio> element.
+                    -->
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    <audio controls>
+        <source src="horse.ogv" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+</body>
+</html>
